@@ -1,0 +1,45 @@
+Usage: bash ./run.sh <--first-fit|--best-fit> [--debug]
+rm -f *~ *.o libmem.so
+gcc -g -fPIC  -Wall -DFIRST_FIT=1 -UDEBUG   -c -o memlib.o memlib.c
+gcc -g -fPIC  -Wall -DFIRST_FIT=1 -UDEBUG   -c -o mm.o mm.c
+gcc -g -fPIC  -Wall -DFIRST_FIT=1 -UDEBUG -shared -o libmem.so mm.o memlib.o
+before free: 0.970896; after free: 0.218701
+time of loop 0 : 649ms
+before free: 0.949812; after free: 0.212392
+time of loop 1 : 623ms
+before free: 0.944493; after free: 0.215021
+time of loop 2 : 719ms
+before free: 0.941182; after free: 0.213058
+time of loop 3 : 614ms
+before free: 0.93814; after free: 0.208419
+time of loop 4 : 664ms
+before free: 0.939806; after free: 0.21112
+time of loop 5 : 848ms
+before free: 0.937378; after free: 0.209812
+time of loop 6 : 855ms
+before free: 0.940559; after free: 0.210772
+time of loop 7 : 847ms
+before free: 0.934929; after free: 0.208422
+time of loop 8 : 596ms
+before free: 0.943898; after free: 0.210193
+time of loop 9 : 603ms
+before free: 0.941891; after free: 0.211119
+time of loop 10 : 599ms
+before free: 0.940286; after free: 0.214303
+time of loop 11 : 625ms
+before free: 0.943299; after free: 0.212796
+time of loop 12 : 611ms
+before free: 0.94319; after free: 0.210385
+time of loop 13 : 554ms
+before free: 0.946878; after free: 0.212416
+time of loop 14 : 553ms
+before free: 0.941931; after free: 0.211776
+time of loop 15 : 591ms
+before free: 0.938254; after free: 0.210514
+time of loop 16 : 547ms
+before free: 0.938222; after free: 0.211358
+time of loop 17 : 543ms
+before free: 0.93871; after free: 0.210255
+time of loop 18 : 556ms
+before free: 0.942245; after free: 0.212321
+time of loop 19 : 548ms

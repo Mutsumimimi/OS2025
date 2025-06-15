@@ -1,0 +1,2030 @@
+Usage: bash ./run.sh <--first-fit|--best-fit> [--debug]
+rm -f *~ *.o libmem.so
+gcc -g -fPIC  -Wall -DFIRST_FIT=1 -DDEBUG   -c -o memlib.o memlib.c
+gcc -g -fPIC  -Wall -DFIRST_FIT=1 -DDEBUG   -c -o mm.o mm.c
+gcc -g -fPIC  -Wall -DFIRST_FIT=1 -DDEBUG -shared -o libmem.so mm.o memlib.o
+
+---cur func: coalesce :
+addr_start: 0x66018, addr_end: 0x67010, size_head: 4096, size_foot: 4096, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0x66018, addr_end: 0xc8aa0, size_head: 404112, size_foot: 404112, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc7aa0, addr_end: 0xc8aa0, size_head: 4104, size_foot: 4104, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc7ac8, addr_end: 0xc8aa0, size_head: 4064, size_foot: 4064, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc7b38, addr_end: 0xc8aa0, size_head: 3952, size_foot: 3952, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc7bc0, addr_end: 0xc8aa0, size_head: 3816, size_foot: 3816, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc7c48, addr_end: 0xc8aa0, size_head: 3680, size_foot: 3680, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc7d50, addr_end: 0xc8aa0, size_head: 3416, size_foot: 3416, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8058, addr_end: 0xc8aa0, size_head: 2640, size_foot: 2640, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8260, addr_end: 0xc8aa0, size_head: 2120, size_foot: 2120, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8288, addr_end: 0xc8aa0, size_head: 2080, size_foot: 2080, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8310, addr_end: 0xc8aa0, size_head: 1944, size_foot: 1944, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8330, addr_end: 0xc8aa0, size_head: 1912, size_foot: 1912, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc83f8, addr_end: 0xc8aa0, size_head: 1712, size_foot: 1712, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8440, addr_end: 0xc8aa0, size_head: 1640, size_foot: 1640, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc84a8, addr_end: 0xc8aa0, size_head: 1536, size_foot: 1536, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc84c8, addr_end: 0xc8aa0, size_head: 1504, size_foot: 1504, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc85d0, addr_end: 0xc8aa0, size_head: 1240, size_foot: 1240, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8658, addr_end: 0xc8aa0, size_head: 1104, size_foot: 1104, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xc8960, addr_end: 0xc9aa0, size_head: 4424, size_foot: 4424, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8ae8, addr_end: 0xc9aa0, size_head: 4032, size_foot: 4032, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8b70, addr_end: 0xc9aa0, size_head: 3896, size_foot: 3896, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8d78, addr_end: 0xc9aa0, size_head: 3376, size_foot: 3376, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8d98, addr_end: 0xc9aa0, size_head: 3344, size_foot: 3344, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8f98, addr_end: 0xc9aa0, size_head: 2832, size_foot: 2832, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8fb8, addr_end: 0xc9aa0, size_head: 2800, size_foot: 2800, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc8fd8, addr_end: 0xc9aa0, size_head: 2768, size_foot: 2768, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9000, addr_end: 0xc9aa0, size_head: 2728, size_foot: 2728, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9048, addr_end: 0xc9aa0, size_head: 2656, size_foot: 2656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9250, addr_end: 0xc9aa0, size_head: 2136, size_foot: 2136, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9318, addr_end: 0xc9aa0, size_head: 1936, size_foot: 1936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9338, addr_end: 0xc9aa0, size_head: 1904, size_foot: 1904, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc93c0, addr_end: 0xc9aa0, size_head: 1768, size_foot: 1768, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9430, addr_end: 0xc9aa0, size_head: 1656, size_foot: 1656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc94f8, addr_end: 0xc9aa0, size_head: 1456, size_foot: 1456, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9680, addr_end: 0xc9aa0, size_head: 1064, size_foot: 1064, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9808, addr_end: 0xc9aa0, size_head: 672, size_foot: 672, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9890, addr_end: 0xc9aa0, size_head: 536, size_foot: 536, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xc9890, addr_end: 0xcaaa0, size_head: 4632, size_foot: 4632, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc98b8, addr_end: 0xcaaa0, size_head: 4592, size_foot: 4592, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9cc0, addr_end: 0xcaaa0, size_head: 3560, size_foot: 3560, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9ce0, addr_end: 0xcaaa0, size_head: 3528, size_foot: 3528, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xc9fe8, addr_end: 0xcaaa0, size_head: 2752, size_foot: 2752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca058, addr_end: 0xcaaa0, size_head: 2640, size_foot: 2640, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca460, addr_end: 0xcaaa0, size_head: 1608, size_foot: 1608, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca498, addr_end: 0xcaaa0, size_head: 1552, size_foot: 1552, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca4b8, addr_end: 0xcaaa0, size_head: 1520, size_foot: 1520, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca640, addr_end: 0xcaaa0, size_head: 1128, size_foot: 1128, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca708, addr_end: 0xcaaa0, size_head: 928, size_foot: 928, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca728, addr_end: 0xcaaa0, size_head: 896, size_foot: 896, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca830, addr_end: 0xcaaa0, size_head: 632, size_foot: 632, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca938, addr_end: 0xcaaa0, size_head: 368, size_foot: 368, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca980, addr_end: 0xcaaa0, size_head: 296, size_foot: 296, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xca9c8, addr_end: 0xcaaa0, size_head: 224, size_foot: 224, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xca9e8, addr_end: 0xcbaa0, size_head: 4288, size_foot: 4288, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcaaf0, addr_end: 0xcbaa0, size_head: 4024, size_foot: 4024, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcab78, addr_end: 0xcbaa0, size_head: 3888, size_foot: 3888, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcaba0, addr_end: 0xcbaa0, size_head: 3848, size_foot: 3848, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcac08, addr_end: 0xcbaa0, size_head: 3744, size_foot: 3744, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcae10, addr_end: 0xcbaa0, size_head: 3224, size_foot: 3224, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcae30, addr_end: 0xcbaa0, size_head: 3192, size_foot: 3192, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcb238, addr_end: 0xcbaa0, size_head: 2160, size_foot: 2160, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcb540, addr_end: 0xcbaa0, size_head: 1384, size_foot: 1384, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcb848, addr_end: 0xcbaa0, size_head: 608, size_foot: 608, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcb910, addr_end: 0xcbaa0, size_head: 408, size_foot: 408, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcb980, addr_end: 0xcbaa0, size_head: 296, size_foot: 296, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcb9a0, addr_end: 0xcbaa0, size_head: 264, size_foot: 264, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xcba10, addr_end: 0xccaa0, size_head: 4248, size_foot: 4248, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcbd18, addr_end: 0xccaa0, size_head: 3472, size_foot: 3472, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcbd80, addr_end: 0xccaa0, size_head: 3368, size_foot: 3368, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcbe48, addr_end: 0xccaa0, size_head: 3168, size_foot: 3168, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcc250, addr_end: 0xccaa0, size_head: 2136, size_foot: 2136, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcc298, addr_end: 0xccaa0, size_head: 2064, size_foot: 2064, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcc420, addr_end: 0xccaa0, size_head: 1672, size_foot: 1672, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcc440, addr_end: 0xccaa0, size_head: 1640, size_foot: 1640, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcc848, addr_end: 0xccaa0, size_head: 608, size_foot: 608, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xcca50, addr_end: 0xcdaa0, size_head: 4184, size_foot: 4184, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xccab8, addr_end: 0xcdaa0, size_head: 4080, size_foot: 4080, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xccc40, addr_end: 0xcdaa0, size_head: 3688, size_foot: 3688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xccd48, addr_end: 0xcdaa0, size_head: 3424, size_foot: 3424, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xccd68, addr_end: 0xcdaa0, size_head: 3392, size_foot: 3392, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xccd88, addr_end: 0xcdaa0, size_head: 3360, size_foot: 3360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcce50, addr_end: 0xcdaa0, size_head: 3160, size_foot: 3160, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd158, addr_end: 0xcdaa0, size_head: 2384, size_foot: 2384, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd220, addr_end: 0xcdaa0, size_head: 2184, size_foot: 2184, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd2a8, addr_end: 0xcdaa0, size_head: 2048, size_foot: 2048, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd430, addr_end: 0xcdaa0, size_head: 1656, size_foot: 1656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd498, addr_end: 0xcdaa0, size_head: 1552, size_foot: 1552, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd6a0, addr_end: 0xcdaa0, size_head: 1032, size_foot: 1032, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd6c0, addr_end: 0xcdaa0, size_head: 1000, size_foot: 1000, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd7c8, addr_end: 0xcdaa0, size_head: 736, size_foot: 736, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd850, addr_end: 0xcdaa0, size_head: 600, size_foot: 600, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd918, addr_end: 0xcdaa0, size_head: 400, size_foot: 400, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd938, addr_end: 0xcdaa0, size_head: 368, size_foot: 368, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd9a8, addr_end: 0xcdaa0, size_head: 256, size_foot: 256, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcd9e0, addr_end: 0xcdaa0, size_head: 200, size_foot: 200, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xcda00, addr_end: 0xceaa0, size_head: 4264, size_foot: 4264, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcdb08, addr_end: 0xceaa0, size_head: 4000, size_foot: 4000, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcdc90, addr_end: 0xceaa0, size_head: 3608, size_foot: 3608, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcdcc8, addr_end: 0xceaa0, size_head: 3552, size_foot: 3552, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcde50, addr_end: 0xceaa0, size_head: 3160, size_foot: 3160, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcdf58, addr_end: 0xceaa0, size_head: 2896, size_foot: 2896, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcdfa0, addr_end: 0xceaa0, size_head: 2824, size_foot: 2824, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce028, addr_end: 0xceaa0, size_head: 2688, size_foot: 2688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce050, addr_end: 0xceaa0, size_head: 2648, size_foot: 2648, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce088, addr_end: 0xceaa0, size_head: 2592, size_foot: 2592, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce150, addr_end: 0xceaa0, size_head: 2392, size_foot: 2392, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce170, addr_end: 0xceaa0, size_head: 2360, size_foot: 2360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce370, addr_end: 0xceaa0, size_head: 1848, size_foot: 1848, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce3b8, addr_end: 0xceaa0, size_head: 1776, size_foot: 1776, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce400, addr_end: 0xceaa0, size_head: 1704, size_foot: 1704, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce808, addr_end: 0xceaa0, size_head: 672, size_foot: 672, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xce910, addr_end: 0xceaa0, size_head: 408, size_foot: 408, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xce938, addr_end: 0xcfaa0, size_head: 4464, size_foot: 4464, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xced40, addr_end: 0xcfaa0, size_head: 3432, size_foot: 3432, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcedb0, addr_end: 0xcfaa0, size_head: 3320, size_foot: 3320, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf1b8, addr_end: 0xcfaa0, size_head: 2288, size_foot: 2288, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf5c0, addr_end: 0xcfaa0, size_head: 1256, size_foot: 1256, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf5f8, addr_end: 0xcfaa0, size_head: 1200, size_foot: 1200, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf630, addr_end: 0xcfaa0, size_head: 1144, size_foot: 1144, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf678, addr_end: 0xcfaa0, size_head: 1072, size_foot: 1072, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf700, addr_end: 0xcfaa0, size_head: 936, size_foot: 936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf788, addr_end: 0xcfaa0, size_head: 800, size_foot: 800, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xcf788, addr_end: 0xd0aa0, size_head: 4896, size_foot: 4896, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf850, addr_end: 0xd0aa0, size_head: 4696, size_foot: 4696, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf870, addr_end: 0xd0aa0, size_head: 4664, size_foot: 4664, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf890, addr_end: 0xd0aa0, size_head: 4632, size_foot: 4632, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcf998, addr_end: 0xd0aa0, size_head: 4368, size_foot: 4368, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcfaa0, addr_end: 0xd0aa0, size_head: 4104, size_foot: 4104, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcfac0, addr_end: 0xd0aa0, size_head: 4072, size_foot: 4072, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcfcc8, addr_end: 0xd0aa0, size_head: 3552, size_foot: 3552, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcfcf0, addr_end: 0xd0aa0, size_head: 3512, size_foot: 3512, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xcfff8, addr_end: 0xd0aa0, size_head: 2736, size_foot: 2736, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd0200, addr_end: 0xd0aa0, size_head: 2216, size_foot: 2216, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd0270, addr_end: 0xd0aa0, size_head: 2104, size_foot: 2104, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd03f8, addr_end: 0xd0aa0, size_head: 1712, size_foot: 1712, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd05f8, addr_end: 0xd0aa0, size_head: 1200, size_foot: 1200, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd0630, addr_end: 0xd0aa0, size_head: 1144, size_foot: 1144, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd0650, addr_end: 0xd0aa0, size_head: 1112, size_foot: 1112, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd0698, addr_end: 0xd0aa0, size_head: 1040, size_foot: 1040, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd08a0, addr_end: 0xd0aa0, size_head: 520, size_foot: 520, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd08c0, addr_end: 0xd0aa0, size_head: 488, size_foot: 488, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd0928, addr_end: 0xd0aa0, size_head: 384, size_foot: 384, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd0948, addr_end: 0xd0aa0, size_head: 352, size_foot: 352, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd0990, addr_end: 0xd1aa0, size_head: 4376, size_foot: 4376, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd0d98, addr_end: 0xd1aa0, size_head: 3344, size_foot: 3344, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd0db8, addr_end: 0xd1aa0, size_head: 3312, size_foot: 3312, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd11c0, addr_end: 0xd1aa0, size_head: 2280, size_foot: 2280, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd11e0, addr_end: 0xd1aa0, size_head: 2248, size_foot: 2248, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd12a8, addr_end: 0xd1aa0, size_head: 2048, size_foot: 2048, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd16b0, addr_end: 0xd1aa0, size_head: 1016, size_foot: 1016, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd1778, addr_end: 0xd1aa0, size_head: 816, size_foot: 816, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd17c0, addr_end: 0xd1aa0, size_head: 744, size_foot: 744, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd1830, addr_end: 0xd1aa0, size_head: 632, size_foot: 632, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd1850, addr_end: 0xd1aa0, size_head: 600, size_foot: 600, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd18c0, addr_end: 0xd1aa0, size_head: 488, size_foot: 488, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd18e0, addr_end: 0xd1aa0, size_head: 456, size_foot: 456, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd1928, addr_end: 0xd2aa0, size_head: 4480, size_foot: 4480, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd1ab0, addr_end: 0xd2aa0, size_head: 4088, size_foot: 4088, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd1ae8, addr_end: 0xd2aa0, size_head: 4032, size_foot: 4032, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd1c70, addr_end: 0xd2aa0, size_head: 3640, size_foot: 3640, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd2078, addr_end: 0xd2aa0, size_head: 2608, size_foot: 2608, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd2480, addr_end: 0xd2aa0, size_head: 1576, size_foot: 1576, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd24a0, addr_end: 0xd2aa0, size_head: 1544, size_foot: 1544, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd24c0, addr_end: 0xd2aa0, size_head: 1512, size_foot: 1512, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd26c8, addr_end: 0xd2aa0, size_head: 992, size_foot: 992, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd2750, addr_end: 0xd2aa0, size_head: 856, size_foot: 856, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd27b8, addr_end: 0xd2aa0, size_head: 752, size_foot: 752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd27d8, addr_end: 0xd2aa0, size_head: 720, size_foot: 720, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd28e0, addr_end: 0xd2aa0, size_head: 456, size_foot: 456, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd29e8, addr_end: 0xd3aa0, size_head: 4288, size_foot: 4288, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd2df0, addr_end: 0xd3aa0, size_head: 3256, size_foot: 3256, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd30f8, addr_end: 0xd3aa0, size_head: 2480, size_foot: 2480, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd31c0, addr_end: 0xd3aa0, size_head: 2280, size_foot: 2280, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd31e0, addr_end: 0xd3aa0, size_head: 2248, size_foot: 2248, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3368, addr_end: 0xd3aa0, size_head: 1856, size_foot: 1856, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd33d8, addr_end: 0xd3aa0, size_head: 1744, size_foot: 1744, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd33f8, addr_end: 0xd3aa0, size_head: 1712, size_foot: 1712, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3800, addr_end: 0xd3aa0, size_head: 680, size_foot: 680, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd38c8, addr_end: 0xd3aa0, size_head: 480, size_foot: 480, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd38e8, addr_end: 0xd4aa0, size_head: 4544, size_foot: 4544, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3bf0, addr_end: 0xd4aa0, size_head: 3768, size_foot: 3768, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3c10, addr_end: 0xd4aa0, size_head: 3736, size_foot: 3736, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3c98, addr_end: 0xd4aa0, size_head: 3600, size_foot: 3600, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3da0, addr_end: 0xd4aa0, size_head: 3336, size_foot: 3336, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3e68, addr_end: 0xd4aa0, size_head: 3136, size_foot: 3136, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3e88, addr_end: 0xd4aa0, size_head: 3104, size_foot: 3104, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3f10, addr_end: 0xd4aa0, size_head: 2968, size_foot: 2968, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3f30, addr_end: 0xd4aa0, size_head: 2936, size_foot: 2936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd3fa0, addr_end: 0xd4aa0, size_head: 2824, size_foot: 2824, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd4028, addr_end: 0xd4aa0, size_head: 2688, size_foot: 2688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd4130, addr_end: 0xd4aa0, size_head: 2424, size_foot: 2424, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd4330, addr_end: 0xd4aa0, size_head: 1912, size_foot: 1912, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd4538, addr_end: 0xd4aa0, size_head: 1392, size_foot: 1392, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd4738, addr_end: 0xd5aa0, size_head: 4976, size_foot: 4976, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd4b40, addr_end: 0xd5aa0, size_head: 3944, size_foot: 3944, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd4c08, addr_end: 0xd5aa0, size_head: 3744, size_foot: 3744, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd4d90, addr_end: 0xd5aa0, size_head: 3352, size_foot: 3352, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd4e18, addr_end: 0xd5aa0, size_head: 3216, size_foot: 3216, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd5220, addr_end: 0xd5aa0, size_head: 2184, size_foot: 2184, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd5428, addr_end: 0xd5aa0, size_head: 1664, size_foot: 1664, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd5448, addr_end: 0xd5aa0, size_head: 1632, size_foot: 1632, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd54b0, addr_end: 0xd5aa0, size_head: 1528, size_foot: 1528, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd56b8, addr_end: 0xd5aa0, size_head: 1008, size_foot: 1008, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd56d8, addr_end: 0xd5aa0, size_head: 976, size_foot: 976, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd57e0, addr_end: 0xd5aa0, size_head: 712, size_foot: 712, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd5868, addr_end: 0xd5aa0, size_head: 576, size_foot: 576, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd5890, addr_end: 0xd5aa0, size_head: 536, size_foot: 536, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd5958, addr_end: 0xd6aa0, size_head: 4432, size_foot: 4432, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd5c60, addr_end: 0xd6aa0, size_head: 3656, size_foot: 3656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd5cd0, addr_end: 0xd6aa0, size_head: 3544, size_foot: 3544, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd5dd8, addr_end: 0xd6aa0, size_head: 3280, size_foot: 3280, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd60e0, addr_end: 0xd6aa0, size_head: 2504, size_foot: 2504, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd6118, addr_end: 0xd6aa0, size_head: 2448, size_foot: 2448, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd6220, addr_end: 0xd6aa0, size_head: 2184, size_foot: 2184, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd62e8, addr_end: 0xd6aa0, size_head: 1984, size_foot: 1984, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd64e8, addr_end: 0xd6aa0, size_head: 1472, size_foot: 1472, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd6510, addr_end: 0xd6aa0, size_head: 1432, size_foot: 1432, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd6918, addr_end: 0xd6aa0, size_head: 400, size_foot: 400, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd6980, addr_end: 0xd6aa0, size_head: 296, size_foot: 296, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd69a8, addr_end: 0xd6aa0, size_head: 256, size_foot: 256, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd69e0, addr_end: 0xd6aa0, size_head: 200, size_foot: 200, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd6a00, addr_end: 0xd7aa0, size_head: 4264, size_foot: 4264, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd6b88, addr_end: 0xd7aa0, size_head: 3872, size_foot: 3872, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd6f90, addr_end: 0xd7aa0, size_head: 2840, size_foot: 2840, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7118, addr_end: 0xd7aa0, size_head: 2448, size_foot: 2448, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7180, addr_end: 0xd7aa0, size_head: 2344, size_foot: 2344, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd71b8, addr_end: 0xd7aa0, size_head: 2288, size_foot: 2288, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7280, addr_end: 0xd7aa0, size_head: 2088, size_foot: 2088, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd72c8, addr_end: 0xd7aa0, size_head: 2016, size_foot: 2016, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd73d0, addr_end: 0xd7aa0, size_head: 1752, size_foot: 1752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7418, addr_end: 0xd7aa0, size_head: 1680, size_foot: 1680, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7488, addr_end: 0xd7aa0, size_head: 1568, size_foot: 1568, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd74f0, addr_end: 0xd7aa0, size_head: 1464, size_foot: 1464, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7510, addr_end: 0xd7aa0, size_head: 1432, size_foot: 1432, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd75d8, addr_end: 0xd7aa0, size_head: 1232, size_foot: 1232, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7610, addr_end: 0xd7aa0, size_head: 1176, size_foot: 1176, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd7a18, addr_end: 0xd8aa0, size_head: 4240, size_foot: 4240, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7d20, addr_end: 0xd8aa0, size_head: 3464, size_foot: 3464, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7da8, addr_end: 0xd8aa0, size_head: 3328, size_foot: 3328, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7de0, addr_end: 0xd8aa0, size_head: 3272, size_foot: 3272, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd7e48, addr_end: 0xd8aa0, size_head: 3168, size_foot: 3168, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8150, addr_end: 0xd8aa0, size_head: 2392, size_foot: 2392, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8350, addr_end: 0xd8aa0, size_head: 1880, size_foot: 1880, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8398, addr_end: 0xd8aa0, size_head: 1808, size_foot: 1808, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd83b8, addr_end: 0xd8aa0, size_head: 1776, size_foot: 1776, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd83e0, addr_end: 0xd8aa0, size_head: 1736, size_foot: 1736, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd86e8, addr_end: 0xd8aa0, size_head: 960, size_foot: 960, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8708, addr_end: 0xd8aa0, size_head: 928, size_foot: 928, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8728, addr_end: 0xd8aa0, size_head: 896, size_foot: 896, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8770, addr_end: 0xd8aa0, size_head: 824, size_foot: 824, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd87e0, addr_end: 0xd8aa0, size_head: 712, size_foot: 712, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8800, addr_end: 0xd8aa0, size_head: 680, size_foot: 680, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8828, addr_end: 0xd8aa0, size_head: 640, size_foot: 640, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8a28, addr_end: 0xd8aa0, size_head: 128, size_foot: 128, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8a48, addr_end: 0xd8aa0, size_head: 96, size_foot: 96, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd8a48, addr_end: 0xd9aa0, size_head: 4192, size_foot: 4192, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8a90, addr_end: 0xd9aa0, size_head: 4120, size_foot: 4120, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8b00, addr_end: 0xd9aa0, size_head: 4008, size_foot: 4008, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8b48, addr_end: 0xd9aa0, size_head: 3936, size_foot: 3936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8c10, addr_end: 0xd9aa0, size_head: 3736, size_foot: 3736, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8d18, addr_end: 0xd9aa0, size_head: 3472, size_foot: 3472, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8d40, addr_end: 0xd9aa0, size_head: 3432, size_foot: 3432, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8e08, addr_end: 0xd9aa0, size_head: 3232, size_foot: 3232, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8e30, addr_end: 0xd9aa0, size_head: 3192, size_foot: 3192, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd8fb8, addr_end: 0xd9aa0, size_head: 2800, size_foot: 2800, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9028, addr_end: 0xd9aa0, size_head: 2688, size_foot: 2688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9430, addr_end: 0xd9aa0, size_head: 1656, size_foot: 1656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd94a0, addr_end: 0xd9aa0, size_head: 1544, size_foot: 1544, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9628, addr_end: 0xd9aa0, size_head: 1152, size_foot: 1152, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9648, addr_end: 0xd9aa0, size_head: 1120, size_foot: 1120, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9668, addr_end: 0xd9aa0, size_head: 1088, size_foot: 1088, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9688, addr_end: 0xd9aa0, size_head: 1056, size_foot: 1056, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9750, addr_end: 0xd9aa0, size_head: 856, size_foot: 856, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9950, addr_end: 0xd9aa0, size_head: 344, size_foot: 344, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xd9a18, addr_end: 0xdaaa0, size_head: 4240, size_foot: 4240, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9c18, addr_end: 0xdaaa0, size_head: 3728, size_foot: 3728, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9c38, addr_end: 0xdaaa0, size_head: 3696, size_foot: 3696, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9c70, addr_end: 0xdaaa0, size_head: 3640, size_foot: 3640, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xd9f78, addr_end: 0xdaaa0, size_head: 2864, size_foot: 2864, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda178, addr_end: 0xdaaa0, size_head: 2352, size_foot: 2352, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda280, addr_end: 0xdaaa0, size_head: 2088, size_foot: 2088, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda348, addr_end: 0xdaaa0, size_head: 1888, size_foot: 1888, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda3b0, addr_end: 0xdaaa0, size_head: 1784, size_foot: 1784, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda538, addr_end: 0xdaaa0, size_head: 1392, size_foot: 1392, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda570, addr_end: 0xdaaa0, size_head: 1336, size_foot: 1336, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda590, addr_end: 0xdaaa0, size_head: 1304, size_foot: 1304, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda5b8, addr_end: 0xdaaa0, size_head: 1264, size_foot: 1264, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda640, addr_end: 0xdaaa0, size_head: 1128, size_foot: 1128, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda678, addr_end: 0xdaaa0, size_head: 1072, size_foot: 1072, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda6b0, addr_end: 0xdaaa0, size_head: 1016, size_foot: 1016, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xda8b8, addr_end: 0xdaaa0, size_head: 496, size_foot: 496, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xdaa40, addr_end: 0xdbaa0, size_head: 4200, size_foot: 4200, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdae48, addr_end: 0xdbaa0, size_head: 3168, size_foot: 3168, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdaeb8, addr_end: 0xdbaa0, size_head: 3056, size_foot: 3056, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdaf28, addr_end: 0xdbaa0, size_head: 2944, size_foot: 2944, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdafb0, addr_end: 0xdbaa0, size_head: 2808, size_foot: 2808, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdafe8, addr_end: 0xdbaa0, size_head: 2752, size_foot: 2752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdb1f0, addr_end: 0xdbaa0, size_head: 2232, size_foot: 2232, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdb218, addr_end: 0xdbaa0, size_head: 2192, size_foot: 2192, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdb418, addr_end: 0xdbaa0, size_head: 1680, size_foot: 1680, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdb720, addr_end: 0xdbaa0, size_head: 904, size_foot: 904, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdb740, addr_end: 0xdbaa0, size_head: 872, size_foot: 872, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdb778, addr_end: 0xdbaa0, size_head: 816, size_foot: 816, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdb900, addr_end: 0xdbaa0, size_head: 424, size_foot: 424, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xdba88, addr_end: 0xdcaa0, size_head: 4128, size_foot: 4128, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdbaf8, addr_end: 0xdcaa0, size_head: 4016, size_foot: 4016, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdbc00, addr_end: 0xdcaa0, size_head: 3752, size_foot: 3752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdbd08, addr_end: 0xdcaa0, size_head: 3488, size_foot: 3488, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdbf10, addr_end: 0xdcaa0, size_head: 2968, size_foot: 2968, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdbfd8, addr_end: 0xdcaa0, size_head: 2768, size_foot: 2768, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdc048, addr_end: 0xdcaa0, size_head: 2656, size_foot: 2656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdc350, addr_end: 0xdcaa0, size_head: 1880, size_foot: 1880, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdc370, addr_end: 0xdcaa0, size_head: 1848, size_foot: 1848, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdc578, addr_end: 0xdcaa0, size_head: 1328, size_foot: 1328, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdc640, addr_end: 0xdcaa0, size_head: 1128, size_foot: 1128, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdc660, addr_end: 0xdcaa0, size_head: 1096, size_foot: 1096, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdc6c8, addr_end: 0xdcaa0, size_head: 992, size_foot: 992, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdc9d0, addr_end: 0xdcaa0, size_head: 216, size_foot: 216, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdc9f0, addr_end: 0xdcaa0, size_head: 184, size_foot: 184, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xdca10, addr_end: 0xddaa0, size_head: 4248, size_foot: 4248, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdcd18, addr_end: 0xddaa0, size_head: 3472, size_foot: 3472, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdcd60, addr_end: 0xddaa0, size_head: 3400, size_foot: 3400, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd068, addr_end: 0xddaa0, size_head: 2624, size_foot: 2624, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd370, addr_end: 0xddaa0, size_head: 1848, size_foot: 1848, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd3b8, addr_end: 0xddaa0, size_head: 1776, size_foot: 1776, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd428, addr_end: 0xddaa0, size_head: 1664, size_foot: 1664, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd450, addr_end: 0xddaa0, size_head: 1624, size_foot: 1624, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd5d8, addr_end: 0xddaa0, size_head: 1232, size_foot: 1232, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd640, addr_end: 0xddaa0, size_head: 1128, size_foot: 1128, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd748, addr_end: 0xddaa0, size_head: 864, size_foot: 864, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd780, addr_end: 0xddaa0, size_head: 808, size_foot: 808, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdd7a8, addr_end: 0xddaa0, size_head: 768, size_foot: 768, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xdd930, addr_end: 0xdeaa0, size_head: 4472, size_foot: 4472, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xddab8, addr_end: 0xdeaa0, size_head: 4080, size_foot: 4080, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xddad8, addr_end: 0xdeaa0, size_head: 4048, size_foot: 4048, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xddb60, addr_end: 0xdeaa0, size_head: 3912, size_foot: 3912, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xddc28, addr_end: 0xdeaa0, size_head: 3712, size_foot: 3712, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xddc98, addr_end: 0xdeaa0, size_head: 3600, size_foot: 3600, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xddd00, addr_end: 0xdeaa0, size_head: 3496, size_foot: 3496, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xddd70, addr_end: 0xdeaa0, size_head: 3384, size_foot: 3384, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdddd8, addr_end: 0xdeaa0, size_head: 3280, size_foot: 3280, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xddfe0, addr_end: 0xdeaa0, size_head: 2760, size_foot: 2760, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde028, addr_end: 0xdeaa0, size_head: 2688, size_foot: 2688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde048, addr_end: 0xdeaa0, size_head: 2656, size_foot: 2656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde0d0, addr_end: 0xdeaa0, size_head: 2520, size_foot: 2520, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde0f0, addr_end: 0xdeaa0, size_head: 2488, size_foot: 2488, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde110, addr_end: 0xdeaa0, size_head: 2456, size_foot: 2456, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde180, addr_end: 0xdeaa0, size_head: 2344, size_foot: 2344, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde208, addr_end: 0xdeaa0, size_head: 2208, size_foot: 2208, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde510, addr_end: 0xdeaa0, size_head: 1432, size_foot: 1432, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde5d8, addr_end: 0xdeaa0, size_head: 1232, size_foot: 1232, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde640, addr_end: 0xdeaa0, size_head: 1128, size_foot: 1128, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde748, addr_end: 0xdeaa0, size_head: 864, size_foot: 864, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xde7d0, addr_end: 0xdeaa0, size_head: 728, size_foot: 728, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xde808, addr_end: 0xdfaa0, size_head: 4768, size_foot: 4768, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdec10, addr_end: 0xdfaa0, size_head: 3736, size_foot: 3736, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdef18, addr_end: 0xdfaa0, size_head: 2960, size_foot: 2960, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdef40, addr_end: 0xdfaa0, size_head: 2920, size_foot: 2920, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdf140, addr_end: 0xdfaa0, size_head: 2408, size_foot: 2408, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdf1c8, addr_end: 0xdfaa0, size_head: 2272, size_foot: 2272, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdf250, addr_end: 0xdfaa0, size_head: 2136, size_foot: 2136, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdf358, addr_end: 0xdfaa0, size_head: 1872, size_foot: 1872, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdf380, addr_end: 0xdfaa0, size_head: 1832, size_foot: 1832, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdf448, addr_end: 0xdfaa0, size_head: 1632, size_foot: 1632, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdf850, addr_end: 0xdfaa0, size_head: 600, size_foot: 600, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xdf8b8, addr_end: 0xe0aa0, size_head: 4592, size_foot: 4592, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdfab8, addr_end: 0xe0aa0, size_head: 4080, size_foot: 4080, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdfb28, addr_end: 0xe0aa0, size_head: 3968, size_foot: 3968, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xdfe30, addr_end: 0xe0aa0, size_head: 3192, size_foot: 3192, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0030, addr_end: 0xe0aa0, size_head: 2680, size_foot: 2680, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0098, addr_end: 0xe0aa0, size_head: 2576, size_foot: 2576, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe00b8, addr_end: 0xe0aa0, size_head: 2544, size_foot: 2544, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0128, addr_end: 0xe0aa0, size_head: 2432, size_foot: 2432, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe01b0, addr_end: 0xe0aa0, size_head: 2296, size_foot: 2296, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe01d8, addr_end: 0xe0aa0, size_head: 2256, size_foot: 2256, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe02e0, addr_end: 0xe0aa0, size_head: 1992, size_foot: 1992, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0308, addr_end: 0xe0aa0, size_head: 1952, size_foot: 1952, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0508, addr_end: 0xe0aa0, size_head: 1440, size_foot: 1440, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0610, addr_end: 0xe0aa0, size_head: 1176, size_foot: 1176, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0918, addr_end: 0xe0aa0, size_head: 400, size_foot: 400, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe0918, addr_end: 0xe1aa0, size_head: 4496, size_foot: 4496, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0c20, addr_end: 0xe1aa0, size_head: 3720, size_foot: 3720, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0c40, addr_end: 0xe1aa0, size_head: 3688, size_foot: 3688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0c88, addr_end: 0xe1aa0, size_head: 3616, size_foot: 3616, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe0e10, addr_end: 0xe1aa0, size_head: 3224, size_foot: 3224, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1018, addr_end: 0xe1aa0, size_head: 2704, size_foot: 2704, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1038, addr_end: 0xe1aa0, size_head: 2672, size_foot: 2672, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1080, addr_end: 0xe1aa0, size_head: 2600, size_foot: 2600, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1108, addr_end: 0xe1aa0, size_head: 2464, size_foot: 2464, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1308, addr_end: 0xe1aa0, size_head: 1952, size_foot: 1952, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe13d0, addr_end: 0xe1aa0, size_head: 1752, size_foot: 1752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1498, addr_end: 0xe1aa0, size_head: 1552, size_foot: 1552, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1500, addr_end: 0xe1aa0, size_head: 1448, size_foot: 1448, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1570, addr_end: 0xe1aa0, size_head: 1336, size_foot: 1336, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1590, addr_end: 0xe1aa0, size_head: 1304, size_foot: 1304, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1618, addr_end: 0xe1aa0, size_head: 1168, size_foot: 1168, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1820, addr_end: 0xe1aa0, size_head: 648, size_foot: 648, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1a28, addr_end: 0xe1aa0, size_head: 128, size_foot: 128, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe1a28, addr_end: 0xe2aa0, size_head: 4224, size_foot: 4224, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1a48, addr_end: 0xe2aa0, size_head: 4192, size_foot: 4192, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1c50, addr_end: 0xe2aa0, size_head: 3672, size_foot: 3672, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1e58, addr_end: 0xe2aa0, size_head: 3152, size_foot: 3152, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1ec0, addr_end: 0xe2aa0, size_head: 3048, size_foot: 3048, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe1f30, addr_end: 0xe2aa0, size_head: 2936, size_foot: 2936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2338, addr_end: 0xe2aa0, size_head: 1904, size_foot: 1904, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2400, addr_end: 0xe2aa0, size_head: 1704, size_foot: 1704, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2438, addr_end: 0xe2aa0, size_head: 1648, size_foot: 1648, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2460, addr_end: 0xe2aa0, size_head: 1608, size_foot: 1608, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2480, addr_end: 0xe2aa0, size_head: 1576, size_foot: 1576, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe24a0, addr_end: 0xe2aa0, size_head: 1544, size_foot: 1544, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe25a8, addr_end: 0xe2aa0, size_head: 1280, size_foot: 1280, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe25d0, addr_end: 0xe2aa0, size_head: 1240, size_foot: 1240, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2640, addr_end: 0xe2aa0, size_head: 1128, size_foot: 1128, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe27c8, addr_end: 0xe2aa0, size_head: 736, size_foot: 736, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe27e8, addr_end: 0xe3aa0, size_head: 4800, size_foot: 4800, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2bf0, addr_end: 0xe3aa0, size_head: 3768, size_foot: 3768, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2df8, addr_end: 0xe3aa0, size_head: 3248, size_foot: 3248, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2e68, addr_end: 0xe3aa0, size_head: 3136, size_foot: 3136, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2f30, addr_end: 0xe3aa0, size_head: 2936, size_foot: 2936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2f78, addr_end: 0xe3aa0, size_head: 2864, size_foot: 2864, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe2f98, addr_end: 0xe3aa0, size_head: 2832, size_foot: 2832, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe32a0, addr_end: 0xe3aa0, size_head: 2056, size_foot: 2056, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3310, addr_end: 0xe3aa0, size_head: 1944, size_foot: 1944, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3498, addr_end: 0xe3aa0, size_head: 1552, size_foot: 1552, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe35a0, addr_end: 0xe3aa0, size_head: 1288, size_foot: 1288, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3728, addr_end: 0xe3aa0, size_head: 896, size_foot: 896, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3760, addr_end: 0xe3aa0, size_head: 840, size_foot: 840, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe37a8, addr_end: 0xe3aa0, size_head: 768, size_foot: 768, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe39a8, addr_end: 0xe3aa0, size_head: 256, size_foot: 256, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe3a30, addr_end: 0xe4aa0, size_head: 4216, size_foot: 4216, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3e38, addr_end: 0xe4aa0, size_head: 3184, size_foot: 3184, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3e60, addr_end: 0xe4aa0, size_head: 3144, size_foot: 3144, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3ee8, addr_end: 0xe4aa0, size_head: 3008, size_foot: 3008, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3f20, addr_end: 0xe4aa0, size_head: 2952, size_foot: 2952, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3f48, addr_end: 0xe4aa0, size_head: 2912, size_foot: 2912, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe3f80, addr_end: 0xe4aa0, size_head: 2856, size_foot: 2856, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe4008, addr_end: 0xe4aa0, size_head: 2720, size_foot: 2720, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe4410, addr_end: 0xe4aa0, size_head: 1688, size_foot: 1688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe4438, addr_end: 0xe4aa0, size_head: 1648, size_foot: 1648, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe44a8, addr_end: 0xe4aa0, size_head: 1536, size_foot: 1536, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe47b0, addr_end: 0xe5aa0, size_head: 4856, size_foot: 4856, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe4bb8, addr_end: 0xe5aa0, size_head: 3824, size_foot: 3824, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe4c28, addr_end: 0xe5aa0, size_head: 3712, size_foot: 3712, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe4f30, addr_end: 0xe5aa0, size_head: 2936, size_foot: 2936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe4f50, addr_end: 0xe5aa0, size_head: 2904, size_foot: 2904, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe4fc0, addr_end: 0xe5aa0, size_head: 2792, size_foot: 2792, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe4fe0, addr_end: 0xe5aa0, size_head: 2760, size_foot: 2760, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5028, addr_end: 0xe5aa0, size_head: 2688, size_foot: 2688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5048, addr_end: 0xe5aa0, size_head: 2656, size_foot: 2656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5068, addr_end: 0xe5aa0, size_head: 2624, size_foot: 2624, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5370, addr_end: 0xe5aa0, size_head: 1848, size_foot: 1848, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5478, addr_end: 0xe5aa0, size_head: 1584, size_foot: 1584, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe54e8, addr_end: 0xe5aa0, size_head: 1472, size_foot: 1472, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5550, addr_end: 0xe5aa0, size_head: 1368, size_foot: 1368, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5658, addr_end: 0xe5aa0, size_head: 1104, size_foot: 1104, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5690, addr_end: 0xe5aa0, size_head: 1048, size_foot: 1048, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5718, addr_end: 0xe5aa0, size_head: 912, size_foot: 912, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5780, addr_end: 0xe5aa0, size_head: 808, size_foot: 808, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe57a0, addr_end: 0xe5aa0, size_head: 776, size_foot: 776, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe59a8, addr_end: 0xe6aa0, size_head: 4352, size_foot: 4352, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5b30, addr_end: 0xe6aa0, size_head: 3960, size_foot: 3960, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5b98, addr_end: 0xe6aa0, size_head: 3856, size_foot: 3856, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5d98, addr_end: 0xe6aa0, size_head: 3344, size_foot: 3344, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5e08, addr_end: 0xe6aa0, size_head: 3232, size_foot: 3232, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5e28, addr_end: 0xe6aa0, size_head: 3200, size_foot: 3200, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5fb0, addr_end: 0xe6aa0, size_head: 2808, size_foot: 2808, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe5fe8, addr_end: 0xe6aa0, size_head: 2752, size_foot: 2752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe6058, addr_end: 0xe6aa0, size_head: 2640, size_foot: 2640, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe6080, addr_end: 0xe6aa0, size_head: 2600, size_foot: 2600, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe6288, addr_end: 0xe6aa0, size_head: 2080, size_foot: 2080, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe6590, addr_end: 0xe6aa0, size_head: 1304, size_foot: 1304, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe6898, addr_end: 0xe7aa0, size_head: 4624, size_foot: 4624, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe6ba0, addr_end: 0xe7aa0, size_head: 3848, size_foot: 3848, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe6c28, addr_end: 0xe7aa0, size_head: 3712, size_foot: 3712, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe6cf0, addr_end: 0xe7aa0, size_head: 3512, size_foot: 3512, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe6ef0, addr_end: 0xe7aa0, size_head: 3000, size_foot: 3000, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe72f8, addr_end: 0xe7aa0, size_head: 1968, size_foot: 1968, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe7318, addr_end: 0xe7aa0, size_head: 1936, size_foot: 1936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe7518, addr_end: 0xe7aa0, size_head: 1424, size_foot: 1424, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe7920, addr_end: 0xe7aa0, size_head: 392, size_foot: 392, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe7948, addr_end: 0xe8aa0, size_head: 4448, size_foot: 4448, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe7b48, addr_end: 0xe8aa0, size_head: 3936, size_foot: 3936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe7d48, addr_end: 0xe8aa0, size_head: 3424, size_foot: 3424, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe7e50, addr_end: 0xe8aa0, size_head: 3160, size_foot: 3160, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe7e98, addr_end: 0xe8aa0, size_head: 3088, size_foot: 3088, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8098, addr_end: 0xe8aa0, size_head: 2576, size_foot: 2576, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8160, addr_end: 0xe8aa0, size_head: 2376, size_foot: 2376, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe81e8, addr_end: 0xe8aa0, size_head: 2240, size_foot: 2240, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8230, addr_end: 0xe8aa0, size_head: 2168, size_foot: 2168, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8538, addr_end: 0xe8aa0, size_head: 1392, size_foot: 1392, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8558, addr_end: 0xe8aa0, size_head: 1360, size_foot: 1360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe85c0, addr_end: 0xe8aa0, size_head: 1256, size_foot: 1256, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe87c0, addr_end: 0xe8aa0, size_head: 744, size_foot: 744, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe8948, addr_end: 0xe9aa0, size_head: 4448, size_foot: 4448, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8b50, addr_end: 0xe9aa0, size_head: 3928, size_foot: 3928, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8b98, addr_end: 0xe9aa0, size_head: 3856, size_foot: 3856, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8c00, addr_end: 0xe9aa0, size_head: 3752, size_foot: 3752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8c88, addr_end: 0xe9aa0, size_head: 3616, size_foot: 3616, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8ca8, addr_end: 0xe9aa0, size_head: 3584, size_foot: 3584, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8cf0, addr_end: 0xe9aa0, size_head: 3512, size_foot: 3512, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8df8, addr_end: 0xe9aa0, size_head: 3248, size_foot: 3248, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe8f80, addr_end: 0xe9aa0, size_head: 2856, size_foot: 2856, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9288, addr_end: 0xe9aa0, size_head: 2080, size_foot: 2080, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9410, addr_end: 0xe9aa0, size_head: 1688, size_foot: 1688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9430, addr_end: 0xe9aa0, size_head: 1656, size_foot: 1656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9450, addr_end: 0xe9aa0, size_head: 1624, size_foot: 1624, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9558, addr_end: 0xe9aa0, size_head: 1360, size_foot: 1360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe95c8, addr_end: 0xe9aa0, size_head: 1248, size_foot: 1248, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe96d0, addr_end: 0xe9aa0, size_head: 984, size_foot: 984, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9858, addr_end: 0xe9aa0, size_head: 592, size_foot: 592, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9960, addr_end: 0xe9aa0, size_head: 328, size_foot: 328, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xe9a68, addr_end: 0xeaaa0, size_head: 4160, size_foot: 4160, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9c68, addr_end: 0xeaaa0, size_head: 3648, size_foot: 3648, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9e68, addr_end: 0xeaaa0, size_head: 3136, size_foot: 3136, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xe9ed8, addr_end: 0xeaaa0, size_head: 3024, size_foot: 3024, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xea0d8, addr_end: 0xeaaa0, size_head: 2512, size_foot: 2512, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xea120, addr_end: 0xeaaa0, size_head: 2440, size_foot: 2440, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xea428, addr_end: 0xeaaa0, size_head: 1664, size_foot: 1664, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xea450, addr_end: 0xeaaa0, size_head: 1624, size_foot: 1624, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xea558, addr_end: 0xeaaa0, size_head: 1360, size_foot: 1360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xea758, addr_end: 0xeaaa0, size_head: 848, size_foot: 848, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xea8e0, addr_end: 0xebaa0, size_head: 4552, size_foot: 4552, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeabe8, addr_end: 0xebaa0, size_head: 3776, size_foot: 3776, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeac10, addr_end: 0xebaa0, size_head: 3736, size_foot: 3736, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeac30, addr_end: 0xebaa0, size_head: 3704, size_foot: 3704, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeadb8, addr_end: 0xebaa0, size_head: 3312, size_foot: 3312, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeae40, addr_end: 0xebaa0, size_head: 3176, size_foot: 3176, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeb048, addr_end: 0xebaa0, size_head: 2656, size_foot: 2656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeb248, addr_end: 0xebaa0, size_head: 2144, size_foot: 2144, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeb268, addr_end: 0xebaa0, size_head: 2112, size_foot: 2112, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeb370, addr_end: 0xebaa0, size_head: 1848, size_foot: 1848, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeb398, addr_end: 0xebaa0, size_head: 1808, size_foot: 1808, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeb3b8, addr_end: 0xebaa0, size_head: 1776, size_foot: 1776, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeb3d8, addr_end: 0xebaa0, size_head: 1744, size_foot: 1744, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeb4a0, addr_end: 0xebaa0, size_head: 1544, size_foot: 1544, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeb4d8, addr_end: 0xebaa0, size_head: 1488, size_foot: 1488, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xeb8e0, addr_end: 0xecaa0, size_head: 4552, size_foot: 4552, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xebae0, addr_end: 0xecaa0, size_head: 4040, size_foot: 4040, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xebb00, addr_end: 0xecaa0, size_head: 4008, size_foot: 4008, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xebb48, addr_end: 0xecaa0, size_head: 3936, size_foot: 3936, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xebf50, addr_end: 0xecaa0, size_head: 2904, size_foot: 2904, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xebf88, addr_end: 0xecaa0, size_head: 2848, size_foot: 2848, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xebff0, addr_end: 0xecaa0, size_head: 2744, size_foot: 2744, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec0f8, addr_end: 0xecaa0, size_head: 2480, size_foot: 2480, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec118, addr_end: 0xecaa0, size_head: 2448, size_foot: 2448, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec180, addr_end: 0xecaa0, size_head: 2344, size_foot: 2344, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec1c8, addr_end: 0xecaa0, size_head: 2272, size_foot: 2272, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec3d0, addr_end: 0xecaa0, size_head: 1752, size_foot: 1752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec3f0, addr_end: 0xecaa0, size_head: 1720, size_foot: 1720, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec410, addr_end: 0xecaa0, size_head: 1688, size_foot: 1688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec4d8, addr_end: 0xecaa0, size_head: 1488, size_foot: 1488, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec500, addr_end: 0xecaa0, size_head: 1448, size_foot: 1448, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec570, addr_end: 0xecaa0, size_head: 1336, size_foot: 1336, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xec770, addr_end: 0xecaa0, size_head: 824, size_foot: 824, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xec878, addr_end: 0xedaa0, size_head: 4656, size_foot: 4656, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xecc80, addr_end: 0xedaa0, size_head: 3624, size_foot: 3624, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xecca0, addr_end: 0xedaa0, size_head: 3592, size_foot: 3592, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed0a8, addr_end: 0xedaa0, size_head: 2560, size_foot: 2560, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed0c8, addr_end: 0xedaa0, size_head: 2528, size_foot: 2528, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed100, addr_end: 0xedaa0, size_head: 2472, size_foot: 2472, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed170, addr_end: 0xedaa0, size_head: 2360, size_foot: 2360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed1a8, addr_end: 0xedaa0, size_head: 2304, size_foot: 2304, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed1c8, addr_end: 0xedaa0, size_head: 2272, size_foot: 2272, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed200, addr_end: 0xedaa0, size_head: 2216, size_foot: 2216, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed2c8, addr_end: 0xedaa0, size_head: 2016, size_foot: 2016, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed450, addr_end: 0xedaa0, size_head: 1624, size_foot: 1624, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed470, addr_end: 0xedaa0, size_head: 1592, size_foot: 1592, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed538, addr_end: 0xedaa0, size_head: 1392, size_foot: 1392, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed558, addr_end: 0xedaa0, size_head: 1360, size_foot: 1360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed578, addr_end: 0xedaa0, size_head: 1328, size_foot: 1328, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed5b0, addr_end: 0xedaa0, size_head: 1272, size_foot: 1272, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed5d8, addr_end: 0xedaa0, size_head: 1232, size_foot: 1232, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed5f8, addr_end: 0xedaa0, size_head: 1200, size_foot: 1200, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xed900, addr_end: 0xedaa0, size_head: 424, size_foot: 424, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xed920, addr_end: 0xeeaa0, size_head: 4488, size_foot: 4488, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xedb20, addr_end: 0xeeaa0, size_head: 3976, size_foot: 3976, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xedb90, addr_end: 0xeeaa0, size_head: 3864, size_foot: 3864, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xedbb0, addr_end: 0xeeaa0, size_head: 3832, size_foot: 3832, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xedc38, addr_end: 0xeeaa0, size_head: 3696, size_foot: 3696, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xedc58, addr_end: 0xeeaa0, size_head: 3664, size_foot: 3664, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xedce0, addr_end: 0xeeaa0, size_head: 3528, size_foot: 3528, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xedde8, addr_end: 0xeeaa0, size_head: 3264, size_foot: 3264, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xedff0, addr_end: 0xeeaa0, size_head: 2744, size_foot: 2744, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xee010, addr_end: 0xeeaa0, size_head: 2712, size_foot: 2712, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xee078, addr_end: 0xeeaa0, size_head: 2608, size_foot: 2608, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xee380, addr_end: 0xeeaa0, size_head: 1832, size_foot: 1832, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xee3b8, addr_end: 0xeeaa0, size_head: 1776, size_foot: 1776, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xee3e0, addr_end: 0xeeaa0, size_head: 1736, size_foot: 1736, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xee6e8, addr_end: 0xeeaa0, size_head: 960, size_foot: 960, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xee758, addr_end: 0xeeaa0, size_head: 848, size_foot: 848, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xee958, addr_end: 0xeeaa0, size_head: 336, size_foot: 336, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xee978, addr_end: 0xefaa0, size_head: 4400, size_foot: 4400, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeeb00, addr_end: 0xefaa0, size_head: 4008, size_foot: 4008, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeeb28, addr_end: 0xefaa0, size_head: 3968, size_foot: 3968, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeebf0, addr_end: 0xefaa0, size_head: 3768, size_foot: 3768, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeec18, addr_end: 0xefaa0, size_head: 3728, size_foot: 3728, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeef20, addr_end: 0xefaa0, size_head: 2952, size_foot: 2952, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef028, addr_end: 0xefaa0, size_head: 2688, size_foot: 2688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef060, addr_end: 0xefaa0, size_head: 2632, size_foot: 2632, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef080, addr_end: 0xefaa0, size_head: 2600, size_foot: 2600, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef0e8, addr_end: 0xefaa0, size_head: 2496, size_foot: 2496, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef170, addr_end: 0xefaa0, size_head: 2360, size_foot: 2360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef378, addr_end: 0xefaa0, size_head: 1840, size_foot: 1840, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef440, addr_end: 0xefaa0, size_head: 1640, size_foot: 1640, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef460, addr_end: 0xefaa0, size_head: 1608, size_foot: 1608, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef498, addr_end: 0xefaa0, size_head: 1552, size_foot: 1552, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef560, addr_end: 0xefaa0, size_head: 1352, size_foot: 1352, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef768, addr_end: 0xefaa0, size_head: 832, size_foot: 832, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef788, addr_end: 0xefaa0, size_head: 800, size_foot: 800, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xef990, addr_end: 0xefaa0, size_head: 280, size_foot: 280, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xef9b0, addr_end: 0xf0aa0, size_head: 4344, size_foot: 4344, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xefb38, addr_end: 0xf0aa0, size_head: 3952, size_foot: 3952, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xefbc0, addr_end: 0xf0aa0, size_head: 3816, size_foot: 3816, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xefc48, addr_end: 0xf0aa0, size_head: 3680, size_foot: 3680, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xefe50, addr_end: 0xf0aa0, size_head: 3160, size_foot: 3160, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xefe70, addr_end: 0xf0aa0, size_head: 3128, size_foot: 3128, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xeff38, addr_end: 0xf0aa0, size_head: 2928, size_foot: 2928, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf0138, addr_end: 0xf0aa0, size_head: 2416, size_foot: 2416, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf0240, addr_end: 0xf0aa0, size_head: 2152, size_foot: 2152, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf0260, addr_end: 0xf0aa0, size_head: 2120, size_foot: 2120, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf0368, addr_end: 0xf0aa0, size_head: 1856, size_foot: 1856, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf0670, addr_end: 0xf0aa0, size_head: 1080, size_foot: 1080, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xf06e0, addr_end: 0xf1aa0, size_head: 5064, size_foot: 5064, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf0ae8, addr_end: 0xf1aa0, size_head: 4032, size_foot: 4032, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf0b50, addr_end: 0xf1aa0, size_head: 3928, size_foot: 3928, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf0f58, addr_end: 0xf1aa0, size_head: 2896, size_foot: 2896, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf0fe0, addr_end: 0xf1aa0, size_head: 2760, size_foot: 2760, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf1068, addr_end: 0xf1aa0, size_head: 2624, size_foot: 2624, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf1170, addr_end: 0xf1aa0, size_head: 2360, size_foot: 2360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf1378, addr_end: 0xf1aa0, size_head: 1840, size_foot: 1840, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf13e8, addr_end: 0xf1aa0, size_head: 1728, size_foot: 1728, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf14b0, addr_end: 0xf1aa0, size_head: 1528, size_foot: 1528, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xf16b0, addr_end: 0xf2aa0, size_head: 5112, size_foot: 5112, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf1ab8, addr_end: 0xf2aa0, size_head: 4080, size_foot: 4080, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf1dc0, addr_end: 0xf2aa0, size_head: 3304, size_foot: 3304, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf1e48, addr_end: 0xf2aa0, size_head: 3168, size_foot: 3168, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf1ed0, addr_end: 0xf2aa0, size_head: 3032, size_foot: 3032, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf20d8, addr_end: 0xf2aa0, size_head: 2512, size_foot: 2512, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf23e0, addr_end: 0xf2aa0, size_head: 1736, size_foot: 1736, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf24e8, addr_end: 0xf2aa0, size_head: 1472, size_foot: 1472, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2550, addr_end: 0xf2aa0, size_head: 1368, size_foot: 1368, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf26d8, addr_end: 0xf2aa0, size_head: 976, size_foot: 976, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf28e0, addr_end: 0xf2aa0, size_head: 456, size_foot: 456, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2918, addr_end: 0xf2aa0, size_head: 400, size_foot: 400, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2938, addr_end: 0xf2aa0, size_head: 368, size_foot: 368, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf29a0, addr_end: 0xf2aa0, size_head: 264, size_foot: 264, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf29c0, addr_end: 0xf2aa0, size_head: 232, size_foot: 232, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf29e0, addr_end: 0xf2aa0, size_head: 200, size_foot: 200, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2a00, addr_end: 0xf2aa0, size_head: 168, size_foot: 168, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2a28, addr_end: 0xf2aa0, size_head: 128, size_foot: 128, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xf2a28, addr_end: 0xf3aa0, size_head: 4224, size_foot: 4224, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2ab0, addr_end: 0xf3aa0, size_head: 4088, size_foot: 4088, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2b20, addr_end: 0xf3aa0, size_head: 3976, size_foot: 3976, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2d20, addr_end: 0xf3aa0, size_head: 3464, size_foot: 3464, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2d48, addr_end: 0xf3aa0, size_head: 3424, size_foot: 3424, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf2f50, addr_end: 0xf3aa0, size_head: 2904, size_foot: 2904, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3158, addr_end: 0xf3aa0, size_head: 2384, size_foot: 2384, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3220, addr_end: 0xf3aa0, size_head: 2184, size_foot: 2184, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf33a8, addr_end: 0xf3aa0, size_head: 1792, size_foot: 1792, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf33d0, addr_end: 0xf3aa0, size_head: 1752, size_foot: 1752, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf33f0, addr_end: 0xf3aa0, size_head: 1720, size_foot: 1720, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3410, addr_end: 0xf3aa0, size_head: 1688, size_foot: 1688, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3598, addr_end: 0xf3aa0, size_head: 1296, size_foot: 1296, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3608, addr_end: 0xf3aa0, size_head: 1184, size_foot: 1184, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf36d0, addr_end: 0xf3aa0, size_head: 984, size_foot: 984, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3718, addr_end: 0xf3aa0, size_head: 912, size_foot: 912, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3738, addr_end: 0xf3aa0, size_head: 880, size_foot: 880, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3940, addr_end: 0xf3aa0, size_head: 360, size_foot: 360, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf39a8, addr_end: 0xf3aa0, size_head: 256, size_foot: 256, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3a10, addr_end: 0xf3aa0, size_head: 152, size_foot: 152, PRED=0x0, SUCC=0x0 
+
+---cur func: coalesce :
+addr_start: 0xf3a38, addr_end: 0xf4aa0, size_head: 4208, size_foot: 4208, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3e40, addr_end: 0xf4aa0, size_head: 3176, size_foot: 3176, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3f08, addr_end: 0xf4aa0, size_head: 2976, size_foot: 2976, PRED=0x0, SUCC=0x0 
+
+---cur func: mm_malloc :
+addr_start: 0xf3f28, addr_end: 0x

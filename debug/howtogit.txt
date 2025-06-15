@@ -1,0 +1,9 @@
+1. 下载git
+2. 在终端中编辑 	
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+3. 查看配置
+$ git config --list
+4. 创建仓库
+$ git init
+
